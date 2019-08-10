@@ -61,14 +61,14 @@ inquirer
                     if (inquirerResponse.searchsong === songs) {
                         console.log(songs)
 
-                        spotify
-                            .search({ type: 'track', query: songs })
-                            .then(function (response) {
-                                console.log(JSON.stringify(response.tracks.items.name, null, 2));
-                            })
-                            .catch(function (err) {
-                                console.error('Error occurred: ' + err);
-                            });
+                        spotify.search({ type: 'track', query: songs }, function(err, data) {
+                            if (err) {
+                              return console.log('Error occurred: ' + err);
+                            }
+                           
+                          console.log(JSON.stringify(data, null, 2)); 
+                        //   console.log(data.tracks.items); 
+                          });
                     }
 
                 })
