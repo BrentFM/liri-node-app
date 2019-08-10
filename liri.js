@@ -5,12 +5,12 @@ var inquirer = require("inquirer");
 var axios = require("axios");
 require('dotenv').config()
 
-inquirer
+inquirer //--- Initial prompt (Main screen) ---//
     .prompt([
         {
             type: "list",
             message: "Select an option",
-            choices: ["Bands in town", "Find a song", "Find movie"],
+            choices: ["Bands in town", "Find a song", "Find a movie"],
             name: "list"
         }
     ])
@@ -33,7 +33,10 @@ inquirer
 
                         axios.get("https://rest.bandsintown.com/artists/" + band + "/events?app_id=codingbootcamp").then(
                             function (response) {
-                                console.log(response.data);
+                                console.log(JSON.stringify(response.data[0].lineup))
+                                console.log(response.data[0].venue.name);
+                                console.log(response.data[0].venue.city + ", " + response.data[0].venue.region + ", " + response.data[0].venue.country);
+                                console.log(response.data[0].datetime);
                             }
                         );
                     }
@@ -53,22 +56,27 @@ inquirer
                     }
                 ])
                 .then(function (inquirerResponse) {
+
                     var songs = inquirerResponse.searchsong;
                     var Spotify = require("node-spotify-api");
                     var keys = require("./keys.js");
                     var spotify = new Spotify(keys.spotify);
 
                     if (inquirerResponse.searchsong === songs) {
-                        console.log(songs)
 
-                        spotify.search({ type: 'track', query: songs }, function(err, data) {
+                        spotify.search({ type: 'track', query: songs, limit: 2 }, function (err, data) {
                             if (err) {
-                              return console.log('Error occurred: ' + err);
+                                return console.log('Error occurred: ' + err);
                             }
-                           
-                          console.log(JSON.stringify(data, null, 2)); 
-                        //   console.log(data.tracks.items); 
-                          });
+                            console.log(data.tracks.items[0].album.artists[0].name);
+                            console.log(data.tracks.items[0].name);
+                            console.log(data.tracks.items[0].album.name);
+                            console.log(data.tracks.items[0].external_urls.spotify);
+
+
+
+                            //   console.log(data.tracks.items); 
+                        });
                     }
 
                 })
@@ -76,23 +84,3 @@ inquirer
 
     })
 
-
-
-// .then(function(inquirerResponse) {
-//     if (inquirerResponse.list === "Bands in town") {
-//         inquirer
-//         .prompt([
-//           {
-//             type: "input",
-//             message: "Search for a band",
-//             name: "searchbands"
-//           }
-//       ])
-//       if (inquirerResponse.list === "a band") {
-//         console.log("it worked!")
-//     }
-//     }
-//     else {
-//         console.log("Error")
-//     }
-// })
