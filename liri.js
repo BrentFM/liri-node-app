@@ -29,11 +29,10 @@ inquirer //--- Initial prompt (Main screen) ---//
                     var band = inquirerResponse.searchbands;
 
                     if (inquirerResponse.searchbands === band) {
-                        console.log(band)
-
                         axios.get("https://rest.bandsintown.com/artists/" + band + "/events?app_id=codingbootcamp").then(
                             function (response) {
-                                console.log(JSON.stringify(response.data[0].lineup))
+
+                                console.log("Lineup: " + response.data[0].lineup.toString());
                                 console.log(response.data[0].venue.name);
                                 console.log(response.data[0].venue.city + ", " + response.data[0].venue.region + ", " + response.data[0].venue.country);
                                 console.log(response.data[0].datetime);
@@ -72,15 +71,43 @@ inquirer //--- Initial prompt (Main screen) ---//
                             console.log(data.tracks.items[0].name);
                             console.log(data.tracks.items[0].album.name);
                             console.log(data.tracks.items[0].external_urls.spotify);
-
-
-
-                            //   console.log(data.tracks.items); 
                         });
                     }
 
                 })
-        }
+        } //--- End of "Find a song" ---//
 
-    })
+        if (inquirerResponse.list === "Find a movie") {
+            inquirer
+                .prompt([
+                    {
+                        type: "input",
+                        message: "Enter movie title",
+                        name: "searchmovies"
+                    }
+                ])
+                .then(function (inquirerResponse) {
+                    var movie = inquirerResponse.searchmovies;
+
+                    if (inquirerResponse.searchmovies === movie) {
+
+                        axios.get("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy").then(
+                            function(response) {
+                                console.log(response.data.Title);
+                                console.log(response.data.Released);
+                                console.log("Movie rating: " + response.data.imdbRating);
+                                console.log(response.data.Ratings[1].Source + ": " + response.data.Ratings[1].Value);
+                                console.log("\n" + response.data.Plot);
+                              console.log("\n" + response.data.Actors);
+                            }
+                        );
+                    }
+
+                })
+            }
+
+
+
+
+            })
 
