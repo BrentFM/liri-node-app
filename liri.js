@@ -3,6 +3,7 @@
 // var spotify = new Spotify(keys.spotify);
 var inquirer = require("inquirer");
 var axios = require("axios");
+var moment = require("moment");
 require('dotenv').config()
 
 inquirer //--- Initial prompt (Main screen) ---//
@@ -28,14 +29,15 @@ inquirer //--- Initial prompt (Main screen) ---//
                 .then(function (inquirerResponse) {
                     var band = inquirerResponse.searchbands;
 
+
                     if (inquirerResponse.searchbands === band) {
                         axios.get("https://rest.bandsintown.com/artists/" + band + "/events?app_id=codingbootcamp").then(
                             function (response) {
-
+                                
                                 console.log("\n" + "Lineup: " + response.data[0].lineup.toString());
                                 console.log("Venue Name: " + response.data[0].venue.name);
                                 console.log("Venue Location: " + response.data[0].venue.city + ", " + response.data[0].venue.region + ", " + response.data[0].venue.country);
-                                console.log("\n" + "Date: " + response.data[0].datetime);
+                                console.log("\n" + "Date: " + moment(response.datetime).format('MMMM Do YYYY, h:mm:ss a'));
                             }
                         );
                     }

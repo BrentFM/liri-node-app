@@ -4,12 +4,13 @@ LIRI will search Spotify for songs, Bands in Town for concerts, and OMDB for mov
 
 ## Installation
 
-LIRI uses Axios, Inquirer, Node-Spotify-API
+LIRI uses Axios, Inquirer, Node-Spotify-API, Moment
 
 ```bash
 npm install axios
 npm install inquirer
 npm install --save node-spotify-api
+npm install moment
 ```
 
 ## Examples
@@ -18,7 +19,6 @@ npm install --save node-spotify-api
 axios.get("https://rest.bandsintown.com/artists/"
 spotify.search({ type: 'track', query: songs, limit: 5 }
 axios.get("http://www.omdbapi.com/?t="
-
 ```
 
 ## Contributing
