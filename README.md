@@ -15,10 +15,24 @@ npm install moment
 
 ## Examples
 
+Axios & Spotify is used to get information depending on the users search
+
+
 ```javascript
 axios.get("https://rest.bandsintown.com/artists/"
 spotify.search({ type: 'track', query: songs, limit: 5 }
 axios.get("http://www.omdbapi.com/?t="
+
+
+inquirer
+    .prompt([
+        {
+            type: "list",
+            message: "Select an option",
+            choices: ["Bands in town", "Find a song", "Find a movie"],
+            name: "list"
+        }
+    ])
 ```
 
 ## Contributing
