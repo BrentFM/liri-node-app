@@ -63,7 +63,7 @@ inquirer //--- Initial prompt (Main screen) ---//
 
                     if (inquirerResponse.searchsong === songs) {
 
-                        spotify.search({ type: 'track', query: songs, limit: 2 }, function (err, data) {
+                        spotify.search({ type: 'track', query: songs, limit: 5 }, function (err, data) {
                             if (err) {
                                 return console.log('Error occurred: ' + err);
                             }
