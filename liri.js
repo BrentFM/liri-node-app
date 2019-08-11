@@ -32,10 +32,10 @@ inquirer //--- Initial prompt (Main screen) ---//
                         axios.get("https://rest.bandsintown.com/artists/" + band + "/events?app_id=codingbootcamp").then(
                             function (response) {
 
-                                console.log("Lineup: " + response.data[0].lineup.toString());
-                                console.log(response.data[0].venue.name);
-                                console.log(response.data[0].venue.city + ", " + response.data[0].venue.region + ", " + response.data[0].venue.country);
-                                console.log(response.data[0].datetime);
+                                console.log("\n" + "Lineup: " + response.data[0].lineup.toString());
+                                console.log("Venue Name: " + response.data[0].venue.name);
+                                console.log("Venue Location: " + response.data[0].venue.city + ", " + response.data[0].venue.region + ", " + response.data[0].venue.country);
+                                console.log("\n" + "Date: " + response.data[0].datetime);
                             }
                         );
                     }
@@ -67,10 +67,10 @@ inquirer //--- Initial prompt (Main screen) ---//
                             if (err) {
                                 return console.log('Error occurred: ' + err);
                             }
-                            console.log(data.tracks.items[0].album.artists[0].name);
-                            console.log(data.tracks.items[0].name);
-                            console.log(data.tracks.items[0].album.name);
-                            console.log(data.tracks.items[0].external_urls.spotify);
+                            console.log("\n" + "Arists Name: " + data.tracks.items[0].album.artists[0].name);
+                            console.log("Track Name: " + data.tracks.items[0].name);
+                            console.log("Album Name: " + data.tracks.items[0].album.name);
+                            console.log("\n" + "Link to song: " +data.tracks.items[0].external_urls.spotify);
                         });
                     }
 
@@ -95,12 +95,12 @@ inquirer //--- Initial prompt (Main screen) ---//
 
                         axios.get("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy").then(
                             function(response) {
-                                console.log(response.data.Title);
-                                console.log(response.data.Released);
-                                console.log("Movie rating: " + response.data.imdbRating);
+                                console.log("\n" + "Movie Name: " + response.data.Title);
+                                console.log("Release Date: " + response.data.Released);
+                                console.log("Movie Rating: " + response.data.imdbRating);
                                 console.log(response.data.Ratings[1].Source + ": " + response.data.Ratings[1].Value);
-                                console.log("\n" + response.data.Plot);
-                              console.log("\n" + response.data.Actors);
+                                console.log("\n" + "Plot: " + response.data.Plot);
+                              console.log("\n" + "Actors: " + response.data.Actors);
                             }
                         );
                     }
