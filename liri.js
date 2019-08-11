@@ -15,8 +15,8 @@ inquirer //--- Initial prompt (Main screen) ---//
         }
     ])
     .then(function (inquirerResponse) {
-
-        if (inquirerResponse.list === "Bands in town") {
+        //--- Sub menu ---//
+        if (inquirerResponse.list === "Bands in town") { 
             inquirer
                 .prompt([
                     {
@@ -44,7 +44,7 @@ inquirer //--- Initial prompt (Main screen) ---//
         } //--- End of "Bands in town" ---//
 
 
-
+//--- Sub menu ---//
         if (inquirerResponse.list === "Find a song") {
             inquirer
                 .prompt([
@@ -77,6 +77,8 @@ inquirer //--- Initial prompt (Main screen) ---//
                 })
         } //--- End of "Find a song" ---//
 
+
+//--- Sub menu ---//
         if (inquirerResponse.list === "Find a movie") {
             inquirer
                 .prompt([
@@ -104,7 +106,7 @@ inquirer //--- Initial prompt (Main screen) ---//
                     }
 
                 })
-            }
+            } //--- End of "Find a movie" ---//
 
 
 
