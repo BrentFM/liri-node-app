@@ -35,6 +35,10 @@ inquirer
     ])
 ```
 
+## Screenshots
+![Main Screen](images/liri1.png "Main screen")
+
+
 ## Contributing
 
 Pull requests are welcome!
