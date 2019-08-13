@@ -36,7 +36,7 @@ inquirer
 ```
 
 ## Screenshots
-![Main Screen](images/liri1.png "Main screen")
+![Main Screen](images/Liri1.png "Main screen")
 
 
 ## Contributing
