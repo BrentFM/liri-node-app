@@ -32,3 +32,133 @@ Track Name: This Again
 Album Name: This Again
 Link to song: https://open.spotify.com/track/0Xfaw3CcpLphgkTLiCs2FP
 ###### End of Find a song info ######
+
+### Find a song info ###
+
+###### End of Find a song info ######
+
+### Find a song info ###
+
+Arists Name: Eminem
+Track Name: Mockingbird
+Album Name: Encore
+Link to song: https://open.spotify.com/track/561jH07mF1jHuk7KlaeF0s
+Arists Name: Ruston Kelly
+Track Name: Mockingbird
+Album Name: Dying Star
+Link to song: https://open.spotify.com/track/6fS1CEMY4LlvQNWuUMoWEQ
+Arists Name: Eminem
+Track Name: Mockingbird
+Album Name: Curtain Call
+Link to song: https://open.spotify.com/track/0TGd9kXFDRQG9FF0netmah
+Arists Name: Smino
+Track Name: TEQUILA MOCKINGBIRD
+Album Name: NOIR
+Link to song: https://open.spotify.com/track/0rC1Zom3PFrEYwdl4QN785
+Arists Name: Eminem
+Track Name: Mockingbird
+Album Name: Encore (Deluxe Version)
+Link to song: https://open.spotify.com/track/3hOZtCS0ltjmBnoDkrYogk
+###### End of Find a song info ######
+
+### Bands in town info ###
+
+Lineup: Nickelback
+Venue Name: Ravinia Festival
+Venue Location: Highland Park, IL, United States
+Date: August 13th 2019, 7:00 pm
+Lineup: Nickelback
+Venue Name: Ravinia Festival
+Venue Location: Highland Park, IL, United States
+Date: August 14th 2019, 7:00 pm
+Lineup: Nickelback
+Venue Name: Paradise Cove Margaritaville
+Venue Location: Tulsa, OK, United States
+Date: August 16th 2019, 8:00 pm
+Lineup: Nickelback
+Venue Name: Choctaw Casino & Resort
+Venue Location: Durant, OK, United States
+Date: August 17th 2019, 8:00 pm
+Lineup: Nickelback,Fozzy
+Venue Name: Mohegan Sun Convention Center
+Venue Location: Uncasville, CT, United States
+Date: August 22nd 2019, 7:30 pm
+Lineup: Nickelback
+Venue Name: Mark G Etess Arena
+Venue Location: Atlantic City, NJ, United States
+Date: August 24th 2019, 7:00 pm
+Lineup: Nickelback
+Venue Name: Avenir Centre
+Venue Location: Moncton, , Canada
+Date: August 27th 2019, 7:30 pm
+Lineup: Nickelback
+Venue Name: Festival de montgorlfières de Gatineau
+Venue Location: Sainte-therese-de-la-gatineau, , Canada
+Date: August 30th 2019, 7:30 pm
+Lineup: Nickelback
+Venue Name: Itaipava De Som A Sol
+Venue Location: Sao Paulo, , Brazil
+Date: October 3rd 2019, 6:00 pm
+Lineup: Nickelback
+Venue Name: Rock In Rio Brazil 2019
+Venue Location: Rio De Janeiro, , Brazil
+Date: October 6th 2019, 8:00 pm
+###### End of Bands in Town info ######
+
+### Find a song info ###
+
+Arists Name: Eminem
+Track Name: Mockingbird
+Album Name: Encore
+Link to song: https://open.spotify.com/track/561jH07mF1jHuk7KlaeF0s
+Arists Name: Ruston Kelly
+Track Name: Mockingbird
+Album Name: Dying Star
+Link to song: https://open.spotify.com/track/6fS1CEMY4LlvQNWuUMoWEQ
+Arists Name: Eminem
+Track Name: Mockingbird
+Album Name: Curtain Call
+Link to song: https://open.spotify.com/track/0TGd9kXFDRQG9FF0netmah
+Arists Name: Smino
+Track Name: TEQUILA MOCKINGBIRD
+Album Name: NOIR
+Link to song: https://open.spotify.com/track/0rC1Zom3PFrEYwdl4QN785
+Arists Name: Eminem
+Track Name: Mockingbird
+Album Name: Encore (Deluxe Version)
+Link to song: https://open.spotify.com/track/3hOZtCS0ltjmBnoDkrYogk
+###### End of Find a song info ######
+
+### Find a song info ###
+
+Arists Name: Eminem
+Track Name: The Ringer
+Album Name: Kamikaze
+Link to song: https://open.spotify.com/track/2jt2WxXMCD4zjACthkJQVE
+Arists Name: The Unlikely Candidates
+Track Name: Ringer
+Album Name: Bed of Liars
+Link to song: https://open.spotify.com/track/5CnbFX4g6oSZRIxxzWQqSh
+Arists Name: Eminem
+Track Name: The Ringer
+Album Name: Kamikaze
+Link to song: https://open.spotify.com/track/6y8S81PdWonn8j9PmahZMf
+Arists Name: The Whiskey Gentry
+Track Name: Looking for Trouble
+Album Name: Dead Ringer
+Link to song: https://open.spotify.com/track/2xD4DFnrn91xLuy4M7Yxt0
+Arists Name: The Turtle Family
+Track Name: Dead Ringer
+Album Name: Part Two
+Link to song: https://open.spotify.com/track/2Lb5J8rNFTlLyIhe95bBzh
+###### End of Find a song info ######
+
+### Find a movie info ###
+
+Movie Name: Toy Story 4
+Release Date: 21 Jun 2019
+Movie Rating: 8.2
+Rotten Tomatoes: 97%
+Plot: When a new toy called "Forky" joins Woody and the gang, a road trip alongside old and new friends reveals how big the world can be for a toy.
+Actors: Tom Hanks, Tim Allen, Annie Potts, Tony Hale
+###### End of Find a movie info ######

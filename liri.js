@@ -49,7 +49,7 @@ inquirer //--- Initial prompt (Main screen) ---//
                                 }
                                 fs.appendFileSync("log.txt", "\n" + "###### End of Bands in Town info ######\n");
                             });
-                            
+
                     }
 
                 })
@@ -83,23 +83,23 @@ inquirer //--- Initial prompt (Main screen) ---//
                             fs.appendFileSync("log.txt", "\n### Find a song info ###\n");
 
                             for (var i = 0; i < findtrack.length; i++) {
-                            console.log("\n" + "Arists Name: " + findtrack[i].album.artists[0].name);
-                            fs.appendFileSync("log.txt", "\n" + "Arists Name: " + findtrack[i].album.artists[0].name);
+                                console.log("\n" + "Arists Name: " + findtrack[i].album.artists[0].name);
+                                fs.appendFileSync("log.txt", "\n" + "Arists Name: " + findtrack[i].album.artists[0].name);
 
-                            console.log("Track Name: " + findtrack[i].name);
-                            fs.appendFileSync("log.txt", "\n" + "Track Name: " + findtrack[i].name);
+                                console.log("Track Name: " + findtrack[i].name);
+                                fs.appendFileSync("log.txt", "\n" + "Track Name: " + findtrack[i].name);
 
-                            console.log("Album Name: " + findtrack[i].album.name);
-                            fs.appendFileSync("log.txt", "\n" + "Album Name: " + findtrack[i].album.name);
+                                console.log("Album Name: " + findtrack[i].album.name);
+                                fs.appendFileSync("log.txt", "\n" + "Album Name: " + findtrack[i].album.name);
 
-                            console.log("Link to song: " + findtrack[i].external_urls.spotify);
-                            fs.appendFileSync("log.txt", "\n" + "Link to song: " + findtrack[i].external_urls.spotify);
+                                console.log("Link to song: " + findtrack[i].external_urls.spotify);
+                                fs.appendFileSync("log.txt", "\n" + "Link to song: " + findtrack[i].external_urls.spotify);
 
-                                }
-                                fs.appendFileSync("log.txt", "\n" + "###### End of Find a song info ######\n");
+                            }
+                            fs.appendFileSync("log.txt", "\n" + "###### End of Find a song info ######\n");
 
                         });
-                    
+
                     }
 
                 })
