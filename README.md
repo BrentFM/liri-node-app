@@ -38,6 +38,12 @@ inquirer
 ## Screenshots
 ![Main Screen](images/Liri1.png "Main screen")
 
+![Bands in town Screen](images/Liri2.png "Bands in town")
+
+![Find a song Screen](images/Liri3.png "Find a song")
+
+![Find a movie Screen](images/Liri4.png "Find a movie")
+
 
 ## Contributing
 
